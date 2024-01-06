@@ -26,16 +26,14 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/ul/li[2]/a")));
 
         AddNewCustomer ac = new AddNewCustomer(driver);
+        Thread.sleep(5000);
         ac.newcustomer();
-
-
+    
         String customerName = generateRandomUsername();
         String customerEmail = generateRandomEmail();
-
         ac.setname(customerName);
         ac.setgender("male");
         ac.setdob("31", "Aug", "1969");
-        Thread.sleep(3000);
         ac.setaddress("Route mahdia km 10 ");
         ac.setcity("Sfax");
         ac.setstate("Tunisia");
