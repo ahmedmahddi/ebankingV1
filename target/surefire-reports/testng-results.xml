@@ -1,64 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="1" failed="6" skipped="0">
+<testng-results ignored="0" total="7" passed="0" failed="0" skipped="7">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-06T14:30:22 GMT+01:00" name="eBankingV1" finished-at="2024-01-06T14:31:46 GMT+01:00" duration-ms="83706">
+  <suite started-at="2024-01-06T18:44:39 GMT+01:00" name="eBankingV1" finished-at="2024-01-06T18:44:54 GMT+01:00" duration-ms="14724">
     <groups>
     </groups>
-    <test started-at="2024-01-06T14:30:22 GMT+01:00" name="BankingApp Test " finished-at="2024-01-06T14:31:46 GMT+01:00" duration-ms="83706">
+    <test started-at="2024-01-06T18:44:39 GMT+01:00" name="BankingApp Test " finished-at="2024-01-06T18:44:54 GMT+01:00" duration-ms="14724">
       <class name="ebanking.testcases.TC_AddNewCustomer_1103">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@51e5fc98]" started-at="2024-01-06T14:31:20 GMT+01:00" name="setup" finished-at="2024-01-06T14:31:27 GMT+01:00" duration-ms="7171" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@51e5fc98]" started-at="2024-01-06T14:31:27 GMT+01:00" name="addNewCustomer" finished-at="2024-01-06T14:31:46 GMT+01:00" duration-ms="19035" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@31d7b7bf]" started-at="2024-01-06T18:44:49 GMT+01:00" name="setup" finished-at="2024-01-06T18:44:54 GMT+01:00" duration-ms="4481" status="FAIL">
+          <exception class="java.lang.IllegalMonitorStateException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="customer"]/tbody/tr[1]/td/p"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1887788703031af715d2bcfbf8d3a9bd, findElement {using=xpath, value=//*[@id="customer"]/tbody/tr[1]/td/p}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58132/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1887788703031af715d2bcfbf8d3a9bd]]>
+              <![CDATA[current thread is not owner]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="customer"]/tbody/tr[1]/td/p"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1887788703031af715d2bcfbf8d3a9bd, findElement {using=xpath, value=//*[@id="customer"]/tbody/tr[1]/td/p}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58132/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1887788703031af715d2bcfbf8d3a9bd
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at ebanking.testcases.TC_AddNewCustomer_1103.addNewCustomer(TC_AddNewCustomer_1103.java:50)
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -71,21 +37,85 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@31d7b7bf]" started-at="2024-01-06T18:44:54 GMT+01:00" name="addNewCustomer" finished-at="2024-01-06T18:44:54 GMT+01:00" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalMonitorStateException">
+            <message>
+              <![CDATA[current thread is not owner]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@51e5fc98]" started-at="2024-01-06T14:31:46 GMT+01:00" name="teardown" finished-at="2024-01-06T14:31:46 GMT+01:00" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@31d7b7bf]" started-at="2024-01-06T18:44:54 GMT+01:00" name="teardown" finished-at="2024-01-06T18:44:54 GMT+01:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ebanking.testcases.TC_AddNewCustomer_1103 -->
       <class name="ebanking.testcases.TC_LoginDDT_1101">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-06T14:30:28 GMT+01:00" name="setup" finished-at="2024-01-06T14:30:30 GMT+01:00" duration-ms="2935" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@30ee2816]" started-at="2024-01-06T18:44:43 GMT+01:00" name="setup" finished-at="2024-01-06T18:44:48 GMT+01:00" duration-ms="4836" status="FAIL">
+          <exception class="java.lang.IllegalMonitorStateException">
+            <message>
+              <![CDATA[current thread is not owner]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-06T14:30:31 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T14:30:39 GMT+01:00" duration-ms="8085" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@30ee2816]" started-at="2024-01-06T18:44:49 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T18:44:49 GMT+01:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -98,50 +128,23 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoAlertPresentException">
+          <exception class="java.lang.IllegalMonitorStateException">
             <message>
-              <![CDATA[no such alert
-  (Session info: chrome=120.0.6099.199)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74]]>
+              <![CDATA[current thread is not owner]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=120.0.6099.199)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1252)
-at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:34)
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -154,11 +157,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-06T14:30:39 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T14:30:50 GMT+01:00" duration-ms="10068" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@30ee2816]" started-at="2024-01-06T18:44:49 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T18:44:49 GMT+01:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -171,57 +174,23 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.IllegalMonitorStateException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74]]>
+              <![CDATA[current thread is not owner]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-at ebanking.pageobjects.Loginpage.setusername(Loginpage.java:25)
-at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -234,91 +203,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-06T14:30:50 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T14:31:00 GMT+01:00" duration-ms="10022" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr645323]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[YzYterE]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-at ebanking.pageobjects.Loginpage.setusername(Loginpage.java:25)
-at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-06T14:31:00 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T14:31:10 GMT+01:00" duration-ms="10029" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@30ee2816]" started-at="2024-01-06T18:44:49 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T18:44:49 GMT+01:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -331,57 +220,23 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.IllegalMonitorStateException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74]]>
+              <![CDATA[current thread is not owner]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-at ebanking.pageobjects.Loginpage.setusername(Loginpage.java:25)
-at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -394,11 +249,11 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-06T14:31:10 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T14:31:20 GMT+01:00" duration-ms="10012" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@30ee2816]" started-at="2024-01-06T18:44:49 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T18:44:49 GMT+01:00" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -407,57 +262,23 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
               <value is-null="true"/>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.IllegalMonitorStateException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74]]>
+              <![CDATA[current thread is not owner]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy10.sendKeys(Unknown Source)
-at ebanking.pageobjects.Loginpage.setusername(Loginpage.java:25)
-at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:848)
 at org.testng.TestRunner.run(TestRunner.java:621)
@@ -470,25 +291,131 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-06T14:31:20 GMT+01:00" name="teardown" finished-at="2024-01-06T14:31:20 GMT+01:00" duration-ms="106" status="PASS">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@30ee2816]" started-at="2024-01-06T18:44:49 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-06T18:44:49 GMT+01:00" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr645323]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YzYterE]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalMonitorStateException">
+            <message>
+              <![CDATA[current thread is not owner]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginDDT -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@30ee2816]" started-at="2024-01-06T18:44:49 GMT+01:00" name="teardown" finished-at="2024-01-06T18:44:49 GMT+01:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->
       <class name="ebanking.testcases.TC_LoginTest_1100">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@12b0404f]" started-at="2024-01-06T14:30:22 GMT+01:00" name="setup" finished-at="2024-01-06T14:30:26 GMT+01:00" duration-ms="3588" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@6580cfdd]" started-at="2024-01-06T18:44:39 GMT+01:00" name="setup" finished-at="2024-01-06T18:44:43 GMT+01:00" duration-ms="4040" status="FAIL">
+          <exception class="java.lang.IllegalMonitorStateException">
+            <message>
+              <![CDATA[current thread is not owner]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@12b0404f]" started-at="2024-01-06T14:30:26 GMT+01:00" name="LoginTest" finished-at="2024-01-06T14:30:27 GMT+01:00" duration-ms="1540" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@6580cfdd]" started-at="2024-01-06T18:44:43 GMT+01:00" name="LoginTest" finished-at="2024-01-06T18:44:43 GMT+01:00" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalMonitorStateException">
+            <message>
+              <![CDATA[current thread is not owner]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalMonitorStateException: current thread is not owner
+at java.base/java.lang.Object.wait0(Native Method)
+at java.base/java.lang.Object.wait(Object.java:366)
+at ebanking.testcases.Baseclass.setup(Baseclass.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalMonitorStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@12b0404f]" started-at="2024-01-06T14:30:27 GMT+01:00" name="teardown" finished-at="2024-01-06T14:30:28 GMT+01:00" duration-ms="64" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@6580cfdd]" started-at="2024-01-06T18:44:43 GMT+01:00" name="teardown" finished-at="2024-01-06T18:44:43 GMT+01:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

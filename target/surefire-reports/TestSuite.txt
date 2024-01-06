@@ -1,81 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 84.452 s <<< FAILURE! - in TestSuite
-LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 8.093 s  <<< FAILURE!
-org.openqa.selenium.NoAlertPresentException: 
-no such alert
-  (Session info: chrome=120.0.6099.199)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:34)
+Tests run: 13, Failures: 3, Errors: 0, Skipped: 10, Time elapsed: 15.231 s <<< FAILURE! - in TestSuite
+setup(ebanking.testcases.TC_LoginTest_1100)  Time elapsed: 4.426 s  <<< FAILURE!
+java.lang.IllegalMonitorStateException: current thread is not owner
 
-LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 10.068 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
+setup(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 4.838 s  <<< FAILURE!
+java.lang.IllegalMonitorStateException: current thread is not owner
 
-LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 10.023 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
-
-LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 10.028 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
-
-LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 10.012 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"*[name='uid']"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [572f4920257c5ea04c598b38088d7f74, findElement {using=name, value=uid}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57776}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57776/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 572f4920257c5ea04c598b38088d7f74
-	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
-
-addNewCustomer(ebanking.testcases.TC_AddNewCustomer_1103)  Time elapsed: 19.044 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="customer"]/tbody/tr[1]/td/p"}
-  (Session info: chrome=120.0.6099.199)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1887788703031af715d2bcfbf8d3a9bd, findElement {using=xpath, value=//*[@id="customer"]/tbody/tr[1]/td/p}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58132/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1887788703031af715d2bcfbf8d3a9bd
-	at ebanking.testcases.TC_AddNewCustomer_1103.addNewCustomer(TC_AddNewCustomer_1103.java:50)
+setup(ebanking.testcases.TC_AddNewCustomer_1103)  Time elapsed: 4.481 s  <<< FAILURE!
+java.lang.IllegalMonitorStateException: current thread is not owner
 

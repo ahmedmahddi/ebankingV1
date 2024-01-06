@@ -18,24 +18,24 @@ public class Baseclass {
     public static WebDriver driver;
 
     @BeforeClass
-    public void setup() {
+    public void setup() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", readconfig.getapplicationchromedriver());
 
-        String extensionPath = "C:\\Users\\LEGION\\eclipse-workspace\\ebankingV1\\extension\\adblock.crx";
+        String extensionPath = "C:\\Users\\LEGION\\eclipse-workspace\\ebankingV1\\extension\\ublock.crx";
 
         ChromeOptions options = new ChromeOptions();
 
         options.addExtensions(new File(extensionPath));
-
         // Create a new ChromeDriver with the configured ChromeOptions
         driver = new ChromeDriver(options);
-
         driver.get(URL);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @AfterClass
     public void teardown() {
-        driver.close();
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }

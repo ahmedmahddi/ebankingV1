@@ -26,7 +26,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/ul/li[2]/a")));
 
         AddNewCustomer ac = new AddNewCustomer(driver);
-        Thread.sleep(5000);
+        Thread.sleep(15000);
         ac.newcustomer();
     
         String customerName = generateRandomUsername();
