@@ -1,8 +1,11 @@
 package ebanking.testcases;
 
+import java.time.Duration;
 import java.util.UUID;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ebanking.pageobjects.AddNewCustomer;
@@ -19,11 +22,11 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         lp.setpassword(pw);
         lp.clickSubmit();
 
-       // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-       // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/ul/li[2]/a")));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/ul/li[2]/a")));
 
         AddNewCustomer ac = new AddNewCustomer(driver);
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         ac.newcustomer();
     
         String customerName = generateRandomUsername();
