@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-07T16:21:46 GMT+01:00" name="Default suite" finished-at="2024-01-07T16:22:09 GMT+01:00" duration-ms="22792">
+  <suite started-at="2024-01-07T16:28:58 GMT+01:00" name="Default suite" finished-at="2024-01-07T16:29:22 GMT+01:00" duration-ms="23943">
     <groups>
     </groups>
-    <test started-at="2024-01-07T16:21:46 GMT+01:00" name="Default test" finished-at="2024-01-07T16:22:09 GMT+01:00" duration-ms="22792">
+    <test started-at="2024-01-07T16:28:58 GMT+01:00" name="Default test" finished-at="2024-01-07T16:29:22 GMT+01:00" duration-ms="23943">
       <class name="ebanking.testcases.TC_AddNewCustomer_1103">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59474f18]" started-at="2024-01-07T16:21:46 GMT+01:00" name="setup" finished-at="2024-01-07T16:21:52 GMT+01:00" duration-ms="5247" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59474f18]" started-at="2024-01-07T16:28:58 GMT+01:00" name="setup" finished-at="2024-01-07T16:29:03 GMT+01:00" duration-ms="5383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59474f18]" started-at="2024-01-07T16:21:52 GMT+01:00" name="addNewCustomer" finished-at="2024-01-07T16:22:09 GMT+01:00" duration-ms="17160" status="PASS">
+        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59474f18]" started-at="2024-01-07T16:29:03 GMT+01:00" name="addNewCustomer" finished-at="2024-01-07T16:29:21 GMT+01:00" duration-ms="18156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59474f18]" started-at="2024-01-07T16:22:09 GMT+01:00" name="teardown" finished-at="2024-01-07T16:22:09 GMT+01:00" duration-ms="356" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59474f18]" started-at="2024-01-07T16:29:21 GMT+01:00" name="teardown" finished-at="2024-01-07T16:29:22 GMT+01:00" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

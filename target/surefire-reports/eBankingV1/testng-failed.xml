@@ -6,21 +6,14 @@
       <class name="ebanking.testcases.TC_AddNewCustomer_1103">
         <methods>
           <include name="setup"/>
-          <include name="addNewCustomer"/>
           <include name="teardown"/>
+          <include name="addNewCustomer"/>
         </methods>
       </class> <!-- ebanking.testcases.TC_AddNewCustomer_1103 -->
-      <class name="ebanking.testcases.TC_LoginTest_1100">
-        <methods>
-          <include name="setup"/>
-          <include name="LoginTest"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- ebanking.testcases.TC_LoginTest_1100 -->
       <class name="ebanking.testcases.TC_LoginDDT_1101">
         <methods>
           <include name="setup"/>
-          <include name="LoginDDT"/>
+          <include name="LoginDDT" invocation-numbers="1 2 3 4"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->

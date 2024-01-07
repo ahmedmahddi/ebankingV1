@@ -48,7 +48,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         Thread.sleep(3000);
         // Assertion
         String expectedMsg = "Customer Registered Successfully!!!";
-        String actualMsg = driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[1]/td/p")).getText();
+        String actualMsg = driver.findElement(By.xpath("(//p[@class='heading3'])[1]")).getText();
 
         try {
             Assert.assertEquals(actualMsg, expectedMsg);

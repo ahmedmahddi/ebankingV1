@@ -1,13 +1,33 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 3, Errors: 0, Skipped: 10, Time elapsed: 15.231 s <<< FAILURE! - in TestSuite
-setup(ebanking.testcases.TC_LoginTest_1100)  Time elapsed: 4.426 s  <<< FAILURE!
-java.lang.IllegalMonitorStateException: current thread is not owner
+Tests run: 7, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 69.69 s <<< FAILURE! - in TestSuite
+LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 5.407 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:27)
 
-setup(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 4.838 s  <<< FAILURE!
-java.lang.IllegalMonitorStateException: current thread is not owner
+LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 4.458 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:27)
 
-setup(ebanking.testcases.TC_AddNewCustomer_1103)  Time elapsed: 4.481 s  <<< FAILURE!
-java.lang.IllegalMonitorStateException: current thread is not owner
+LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 5.029 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:27)
+
+LoginDDT(ebanking.testcases.TC_LoginDDT_1101)  Time elapsed: 0.009 s  <<< FAILURE!
+java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at ebanking.testcases.TC_LoginDDT_1101.LoginDDT(TC_LoginDDT_1101.java:19)
+
+addNewCustomer(ebanking.testcases.TC_AddNewCustomer_1103)  Time elapsed: 22.944 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name']"}
+  (Session info: chrome=120.0.6099.199)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa85d815ca1db7b1299387256a62a752, findElement {using=name, value=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55099/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aa85d815ca1db7b1299387256a62a752
+	at ebanking.testcases.TC_AddNewCustomer_1103.addNewCustomer(TC_AddNewCustomer_1103.java:34)
 
