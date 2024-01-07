@@ -32,6 +32,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         String customerName = generateRandomUsername();
         String customerEmail = generateRandomEmail();
         ac.setname(customerName);
+        System.out.println("New customer with this username: " + customerName);
         ac.setgender("male");
         ac.setdob("31", "Aug", "1969");
         ac.setaddress("Route mahdia km 10 ");
@@ -40,6 +41,8 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         ac.setpin(241227);
         ac.setmobile("27172110");
         ac.setmail(customerEmail);
+        System.out.println("New customer with this email: " + customerEmail);
+
         ac.setpassword("Heckyeah12");
         ac.clicksubmit();
         Thread.sleep(3000);
