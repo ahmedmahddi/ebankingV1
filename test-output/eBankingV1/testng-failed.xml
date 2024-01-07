@@ -3,13 +3,6 @@
 <suite thread-count="3" parallel="tests" name="Failed suite [eBankingV1]" guice-stage="DEVELOPMENT">
   <test thread-count="3" parallel="tests" name="BankingApp Test (failed)">
     <classes>
-      <class name="ebanking.testcases.TC_AddNewCustomer_1103">
-        <methods>
-          <include name="addnewcustomer"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- ebanking.testcases.TC_AddNewCustomer_1103 -->
       <class name="ebanking.testcases.TC_LoginDDT_1101">
         <methods>
           <include name="setup"/>

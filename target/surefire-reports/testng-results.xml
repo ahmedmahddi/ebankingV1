@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="7" passed="2" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-07T16:23:52 GMT+01:00" name="eBankingV1" finished-at="2024-01-07T16:25:01 GMT+01:00" duration-ms="69156">
+  <suite started-at="2024-01-07T17:02:34 GMT+01:00" name="eBankingV1" finished-at="2024-01-07T17:03:40 GMT+01:00" duration-ms="65912">
     <groups>
     </groups>
-    <test started-at="2024-01-07T16:23:52 GMT+01:00" name="BankingApp Test " finished-at="2024-01-07T16:25:01 GMT+01:00" duration-ms="69156">
+    <test started-at="2024-01-07T17:02:34 GMT+01:00" name="BankingApp Test " finished-at="2024-01-07T17:03:40 GMT+01:00" duration-ms="65912">
       <class name="ebanking.testcases.TC_AddNewCustomer_1103">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@51e5fc98]" started-at="2024-01-07T16:24:33 GMT+01:00" name="setup" finished-at="2024-01-07T16:24:38 GMT+01:00" duration-ms="5269" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@4fb0f2b9]" started-at="2024-01-07T17:03:14 GMT+01:00" name="setup" finished-at="2024-01-07T17:03:19 GMT+01:00" duration-ms="4951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@51e5fc98]" started-at="2024-01-07T16:24:38 GMT+01:00" name="addNewCustomer" finished-at="2024-01-07T16:25:01 GMT+01:00" duration-ms="22942" status="FAIL">
+        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@4fb0f2b9]" started-at="2024-01-07T17:03:19 GMT+01:00" name="addNewCustomer" finished-at="2024-01-07T17:03:40 GMT+01:00" duration-ms="21332" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name']"}
@@ -20,9 +20,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aa85d815ca1db7b1299387256a62a752, findElement {using=name, value=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55099/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aa85d815ca1db7b1299387256a62a752]]>
+Command: [b27efca7a59f399e1eb5a40413d975d4, findElement {using=name, value=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\LEGION\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63503/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b27efca7a59f399e1eb5a40413d975d4]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='name']"}
@@ -31,9 +31,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.15.0', revision: '1d14b5521b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [aa85d815ca1db7b1299387256a62a752, findElement {using=name, value=name}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55099}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55099/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: aa85d815ca1db7b1299387256a62a752
+Command: [b27efca7a59f399e1eb5a40413d975d4, findElement {using=name, value=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.199, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\LEGION\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63503}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63503/devtoo..., se:cdpVersion: 120.0.6099.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b27efca7a59f399e1eb5a40413d975d4
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -79,17 +79,17 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@51e5fc98]" started-at="2024-01-07T16:25:01 GMT+01:00" name="teardown" finished-at="2024-01-07T16:25:01 GMT+01:00" duration-ms="273" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@4fb0f2b9]" started-at="2024-01-07T17:03:40 GMT+01:00" name="teardown" finished-at="2024-01-07T17:03:40 GMT+01:00" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ebanking.testcases.TC_AddNewCustomer_1103 -->
       <class name="ebanking.testcases.TC_LoginDDT_1101">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-07T16:24:02 GMT+01:00" name="setup" finished-at="2024-01-07T16:24:08 GMT+01:00" duration-ms="5008" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@4fb61f4a]" started-at="2024-01-07T17:02:43 GMT+01:00" name="setup" finished-at="2024-01-07T17:02:47 GMT+01:00" duration-ms="4554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-07T16:24:08 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T16:24:18 GMT+01:00" duration-ms="9259" status="PASS">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@4fb61f4a]" started-at="2024-01-07T17:02:48 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T17:02:57 GMT+01:00" duration-ms="9354" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-07T16:24:18 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T16:24:23 GMT+01:00" duration-ms="5403" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@4fb61f4a]" started-at="2024-01-07T17:02:57 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T17:03:03 GMT+01:00" duration-ms="5475" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -155,7 +155,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-07T16:24:23 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T16:24:27 GMT+01:00" duration-ms="4458" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@4fb61f4a]" started-at="2024-01-07T17:03:03 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T17:03:07 GMT+01:00" duration-ms="4739" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -205,7 +205,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-07T16:24:27 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T16:24:32 GMT+01:00" duration-ms="5029" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@4fb61f4a]" started-at="2024-01-07T17:03:07 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T17:03:13 GMT+01:00" duration-ms="5764" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -255,7 +255,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-07T16:24:32 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T16:24:32 GMT+01:00" duration-ms="8" status="FAIL">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@4fb61f4a]" started-at="2024-01-07T17:03:13 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-07T17:03:13 GMT+01:00" duration-ms="8" status="FAIL">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -303,21 +303,21 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1ffe63b9]" started-at="2024-01-07T16:24:32 GMT+01:00" name="teardown" finished-at="2024-01-07T16:24:33 GMT+01:00" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@4fb61f4a]" started-at="2024-01-07T17:03:13 GMT+01:00" name="teardown" finished-at="2024-01-07T17:03:14 GMT+01:00" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->
       <class name="ebanking.testcases.TC_LoginTest_1100">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@12b0404f]" started-at="2024-01-07T16:23:52 GMT+01:00" name="setup" finished-at="2024-01-07T16:23:58 GMT+01:00" duration-ms="6182" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@6356695f]" started-at="2024-01-07T17:02:34 GMT+01:00" name="setup" finished-at="2024-01-07T17:02:40 GMT+01:00" duration-ms="5579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@12b0404f]" started-at="2024-01-07T16:23:58 GMT+01:00" name="LoginTest" finished-at="2024-01-07T16:24:02 GMT+01:00" duration-ms="3884" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@6356695f]" started-at="2024-01-07T17:02:40 GMT+01:00" name="LoginTest" finished-at="2024-01-07T17:02:42 GMT+01:00" duration-ms="2275" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@12b0404f]" started-at="2024-01-07T16:24:02 GMT+01:00" name="teardown" finished-at="2024-01-07T16:24:02 GMT+01:00" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@6356695f]" started-at="2024-01-07T17:02:42 GMT+01:00" name="teardown" finished-at="2024-01-07T17:02:43 GMT+01:00" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
