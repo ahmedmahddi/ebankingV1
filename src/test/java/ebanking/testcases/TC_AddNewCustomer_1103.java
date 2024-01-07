@@ -1,11 +1,8 @@
 package ebanking.testcases;
 
-import java.time.Duration;
 import java.util.UUID;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ebanking.pageobjects.AddNewCustomer;
@@ -22,11 +19,11 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         lp.setpassword(pw);
         lp.clickSubmit();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/ul/li[2]/a")));
+       // WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+       // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/ul/li[2]/a")));
 
         AddNewCustomer ac = new AddNewCustomer(driver);
-        Thread.sleep(15000);
+        Thread.sleep(5000);
         ac.newcustomer();
     
         String customerName = generateRandomUsername();
@@ -48,7 +45,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         Thread.sleep(3000);
         // Assertion
         String expectedMsg = "Customer Registered Successfully!!!";
-        String actualMsg = driver.findElement(By.xpath("//*[@id=\"customer\"]/tbody/tr[1]/td/p")).getText();
+        String actualMsg = driver.findElement(By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[1]/td/p")).getText();
 
         try {
             Assert.assertEquals(actualMsg, expectedMsg);
