@@ -68,10 +68,10 @@ public class AddNewCustomer {
     }
 
     // Method to set customer date of birth
-    public void setdob(String dd, String mmm, String yyyy) {
+    public void setdob(String dd, String mm, String yyyy) {
         cbirthday.clear();
         cbirthday.sendKeys(dd);
-        cbirthday.sendKeys(mmm);
+        cbirthday.sendKeys(mm);
         cbirthday.sendKeys(Keys.TAB);
         cbirthday.sendKeys(yyyy);
     }

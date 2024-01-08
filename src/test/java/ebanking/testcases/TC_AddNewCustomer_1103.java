@@ -45,7 +45,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         ac.setname(customerName);
         System.out.println("New customer with this username: " + customerName);
         ac.setgender("male");
-        ac.setdob("31", "Aug", "1969");
+        ac.setdob("31", "10", "1969");
         ac.setaddress("Route mahdia km 10 ");
         ac.setcity("Sfax");
         ac.setstate("Tunisia");
