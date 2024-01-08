@@ -5,4 +5,5 @@ ebanking\testcases\Baseclass.class
 ebanking\testcases\TC_AddNewCustomer_1103.class
 ebanking\testcases\TC_LoginDDT_1101.class
 ebanking\pageobjects\AddNewCustomer.class
+ebanking\utilities\ScreenshotUtils.class
 ebanking\utilities\XLUtils.class

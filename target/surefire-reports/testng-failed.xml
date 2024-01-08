@@ -6,6 +6,7 @@
       <class name="ebanking.testcases.TC_AddNewCustomer_1103">
         <methods>
           <include name="setup"/>
+          <include name="tearDown"/>
           <include name="addNewCustomer"/>
           <include name="teardown"/>
         </methods>
@@ -14,6 +15,7 @@
         <methods>
           <include name="setup"/>
           <include name="LoginDDT" invocation-numbers="1 2 3 4"/>
+          <include name="tearDown"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->
