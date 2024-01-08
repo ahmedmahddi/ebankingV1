@@ -3,9 +3,12 @@ package ebanking.testcases;
 import java.io.IOException;
 import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import ebanking.pageobjects.Loginpage;
+import ebanking.utilities.ScreenshotUtils;
 import ebanking.utilities.XLUtils;
 
 public class TC_LoginDDT_1101 extends Baseclass {
@@ -37,7 +40,13 @@ public class TC_LoginDDT_1101 extends Baseclass {
             driver.switchTo().defaultContent();
         }
     }
-
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+        // Check if the test failed, and capture a screenshot if it did
+        if (result.getStatus() == ITestResult.FAILURE) {
+            ScreenshotUtils.captureScreenshot(driver, result);
+        }
+    }
     // Method to check if an alert is present
     public boolean isAlertpresent() {
         try {

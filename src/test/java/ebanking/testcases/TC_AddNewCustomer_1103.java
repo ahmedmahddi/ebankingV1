@@ -7,9 +7,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import ebanking.pageobjects.AddNewCustomer;
 import ebanking.pageobjects.Loginpage;
+import ebanking.utilities.ScreenshotUtils;
 
 public class TC_AddNewCustomer_1103 extends Baseclass {
 
@@ -67,6 +70,13 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
             System.out.println("Customer Registered Successfully!!!");
         } catch (Exception e) {
             System.out.println("Failed to register customer. Verify the entered inputs.");
+        }
+    }
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+        // Check if the test failed, and capture a screenshot if it did
+        if (result.getStatus() == ITestResult.FAILURE) {
+            ScreenshotUtils.captureScreenshot(driver, result);
         }
     }
 

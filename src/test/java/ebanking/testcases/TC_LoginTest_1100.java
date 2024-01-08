@@ -1,8 +1,12 @@
 package ebanking.testcases;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.Assert;
+import org.testng.ITestResult;
+
 import ebanking.pageobjects.Loginpage;
+import ebanking.utilities.ScreenshotUtils;
 
 public class TC_LoginTest_1100 extends Baseclass {
     
@@ -26,5 +30,12 @@ public class TC_LoginTest_1100 extends Baseclass {
         
         // Assertion to compare expected and actual titles
         Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch");
+    }
+    @AfterMethod
+    public void tearDown(ITestResult result) {
+        // Check if the test failed, and capture a screenshot if it did
+        if (result.getStatus() == ITestResult.FAILURE) {
+            ScreenshotUtils.captureScreenshot(driver, result);
+        }
     }
 }
