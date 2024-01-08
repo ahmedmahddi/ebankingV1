@@ -1,8 +1,7 @@
-this is text file for test
-this is text file for test
-this is text file for test
-this is text file for test
-this is text file for test
-this is text file for test
-this is text file for test
-this is text file for test
+"EbankingV1 is a web application project that leverages Selenium WebDriver, Page Object Model (POM), and TestNG for automated testing. The project was initiated with Maven dependencies, ensuring a streamlined and efficient development process. The utilization of Selenium WebDriver facilitates the creation of robust test cases, enhancing the reliability and maintainability of the test suite.
+
+To support continuous integration, the project was seamlessly integrated with Git and GitHub. This integration enables version control and collaborative development, ensuring that changes and updates are tracked systematically. The ultimate goal is to achieve a seamless and automated testing process.
+
+Furthermore, the project was configured for continuous integration using the Jenkins platform. Jenkins automates the testing and deployment processes, providing a consistent and reliable environment for running test cases. Despite successful execution on Eclipse, the project faced challenges when running on Jenkins. Further investigation is required to identify any potential issues in the codebase or configuration that might be causing the test failures on the Jenkins platform.
+
+Overall, EbankingV1 represents a comprehensive approach to web application testing, combining industry-standard tools and methodologies for efficient development and continuous integration."

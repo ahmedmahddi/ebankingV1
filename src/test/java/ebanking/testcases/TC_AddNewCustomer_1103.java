@@ -44,6 +44,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         System.out.println("New customer with this email: " + customerEmail);
 
         ac.setpassword("Heckyeah12");
+        Thread.sleep(3000);
         ac.clicksubmit();
         Thread.sleep(3000);
         // Assertion
