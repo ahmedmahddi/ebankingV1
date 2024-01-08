@@ -4,8 +4,8 @@
   <test name="BankingApp Test ">
 	  
     <classes>
- 	<!--   <class name="ebanking.testcases.TC_LoginTest_1100"/> 
-      <class name="ebanking.testcases.TC_LoginDDT_1101"/>-->
+	<class name="ebanking.testcases.TC_LoginTest_1100"/> 
+      <class name="ebanking.testcases.TC_LoginDDT_1101"/>
       <class name="ebanking.testcases.TC_AddNewCustomer_1103"/>
     </classes>
   </test> <!-- Test -->
