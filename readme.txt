@@ -23,7 +23,6 @@ The project is structured as follows:
 ## Setup
 
 1. **Clone the Repository:**
-   ```bash
    git clone <https://github.com/ahmedmahddi/ebankingV1>
 --------------------------------------------------------
 1-Configure WebDriver:
