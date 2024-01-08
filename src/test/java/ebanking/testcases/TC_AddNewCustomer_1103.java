@@ -30,7 +30,6 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
 
         // Initializing AddNewCustomer page object
         AddNewCustomer ac = new AddNewCustomer(driver);
-        Thread.sleep(10000);
 
         // Click on the "New Customer" button
         ac.newcustomer();
