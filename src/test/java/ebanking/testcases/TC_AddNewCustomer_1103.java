@@ -15,22 +15,31 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
 
     @Test
     public void addNewCustomer() throws InterruptedException {
+        // Print the username being used for login
         System.out.println("Logging in as user: " + un);
 
+        // Initializing Loginpage and logging in
         Loginpage lp = new Loginpage(driver);
         lp.setusername(un);
         lp.setpassword(pw);
         lp.clickSubmit();
 
+        // Wait until the "New Customer" button is visible
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/ul/li[2]/a")));
 
+        // Initializing AddNewCustomer page object
         AddNewCustomer ac = new AddNewCustomer(driver);
         Thread.sleep(10000);
+
+        // Click on the "New Customer" button
         ac.newcustomer();
-    
+
+        // Generating random customer name and email
         String customerName = generateRandomUsername();
         String customerEmail = generateRandomEmail();
+
+        // Setting customer details
         ac.setname(customerName);
         System.out.println("New customer with this username: " + customerName);
         ac.setgender("male");
@@ -45,9 +54,12 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
 
         ac.setpassword("Heckyeah12");
         Thread.sleep(3000);
+
+        // Click on the "Submit" button
         ac.clicksubmit();
         Thread.sleep(3000);
-        // Assertion
+
+        // Assertion to verify successful customer registration
         String expectedMsg = "Customer Registered Successfully!!!";
         String actualMsg = driver.findElement(By.xpath("(//p[@class='heading3'])[1]")).getText();
 
@@ -59,11 +71,13 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         }
     }
 
+    // Method to generate a random username
     private String generateRandomUsername() {
         String base = "user" + UUID.randomUUID().toString().replaceAll("[^a-zA-Z]", "");
         return base.substring(0, Math.min(base.length(), 8));
     }
 
+    // Method to generate a random email
     private String generateRandomEmail() {
         return UUID.randomUUID().toString().replace("-", "").substring(0, 12) + "@gmail.com";
     }

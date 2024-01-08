@@ -11,13 +11,21 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class XLUtils {
+    // FileInputStream and FileOutputStream instances for reading and writing Excel files
     public static FileInputStream fi;
     public static FileOutputStream fo;
+
+    // XSSFWorkbook instance to represent the Excel workbook
     public static XSSFWorkbook wb;
+
+    // XSSFSheet instance to represent an Excel sheet
     public static XSSFSheet ws;
+
+    // XSSFRow and XSSFCell instances to represent a row and a cell in Excel
     public static XSSFRow row;
     public static XSSFCell cell;
 
+    // Method to get the row count in an Excel sheet
     public static int getRowCount(String xlfile, String xlsheet) throws IOException {
         try (FileInputStream fi = new FileInputStream(xlfile); XSSFWorkbook wb = new XSSFWorkbook(fi)) {
             XSSFSheet ws = wb.getSheet(xlsheet);
@@ -25,6 +33,7 @@ public class XLUtils {
         }
     }
 
+    // Method to get the cell count in a specific row of an Excel sheet
     public static int getCellCount(String xlfile, String xlsheet, int rownum) throws IOException {
         try (FileInputStream fi = new FileInputStream(xlfile); XSSFWorkbook wb = new XSSFWorkbook(fi)) {
             XSSFSheet ws = wb.getSheet(xlsheet);
@@ -33,6 +42,7 @@ public class XLUtils {
         }
     }
 
+    // Method to get the data from a specific cell in an Excel sheet
     public static String getCellData(String xlfile, String xlsheet, int rownum, int colnum) throws IOException {
         try (FileInputStream fi = new FileInputStream(xlfile); XSSFWorkbook wb = new XSSFWorkbook(fi)) {
             XSSFSheet ws = wb.getSheet(xlsheet);
@@ -43,6 +53,7 @@ public class XLUtils {
         }
     }
 
+    // Method to set data in a specific cell in an Excel sheet
     public static void setCellData(String xlfile, String xlsheet, int rownum, int colnum, String data) throws IOException {
         try (FileInputStream fi = new FileInputStream(xlfile); XSSFWorkbook wb = new XSSFWorkbook(fi)) {
             XSSFSheet ws = wb.getSheet(xlsheet);
