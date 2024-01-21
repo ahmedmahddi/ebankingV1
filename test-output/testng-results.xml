@@ -1,202 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-21T15:26:43 GMT+01:00" name="eBankingV1" finished-at="2024-01-21T15:28:15 GMT+01:00" duration-ms="91815">
+  <suite started-at="2024-01-21T19:07:49 GMT+01:00" name="Default suite" finished-at="2024-01-21T19:07:56 GMT+01:00" duration-ms="7449">
     <groups>
     </groups>
-    <test started-at="2024-01-21T15:26:43 GMT+01:00" name="BankingApp Test " finished-at="2024-01-21T15:28:15 GMT+01:00" duration-ms="91815">
-      <class name="ebanking.testcases.TC_AddNewCustomer_1103">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@3c41ed1d]" started-at="2024-01-21T15:27:59 GMT+01:00" name="setup" finished-at="2024-01-21T15:28:06 GMT+01:00" duration-ms="6787" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@3c41ed1d]" started-at="2024-01-21T15:28:06 GMT+01:00" name="addNewCustomer" finished-at="2024-01-21T15:28:15 GMT+01:00" duration-ms="9342" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewCustomer -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@3c41ed1d]" started-at="2024-01-21T15:28:15 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:28:15 GMT+01:00" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addNewCustomer status=SUCCESS method=TC_AddNewCustomer_1103.addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@3c41ed1d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@3c41ed1d]" started-at="2024-01-21T15:28:15 GMT+01:00" name="teardown" finished-at="2024-01-21T15:28:15 GMT+01:00" duration-ms="297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- ebanking.testcases.TC_AddNewCustomer_1103 -->
-      <class name="ebanking.testcases.TC_LoginDDT_1101">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:26:55 GMT+01:00" name="setup" finished-at="2024-01-21T15:27:02 GMT+01:00" duration-ms="7712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:03 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:27:11 GMT+01:00" duration-ms="8067" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr549285]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[yjUjYha]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:11 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:27:11 GMT+01:00" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:11 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:27:28 GMT+01:00" duration-ms="16951" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr545323]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[YyYterE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:28 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:27:28 GMT+01:00" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:28 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:27:43 GMT+01:00" duration-ms="15188" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr645323]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[YzYterE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginDDT -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:43 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:27:58 GMT+01:00" duration-ms="15258" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr642323]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[YyYterE]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:43 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:27:43 GMT+01:00" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:58 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:27:58 GMT+01:00" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:58 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:27:58 GMT+01:00" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:58 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:27:58 GMT+01:00" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@34e9fd99]" started-at="2024-01-21T15:27:58 GMT+01:00" name="teardown" finished-at="2024-01-21T15:27:59 GMT+01:00" duration-ms="355" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->
+    <test started-at="2024-01-21T19:07:49 GMT+01:00" name="Default test" finished-at="2024-01-21T19:07:56 GMT+01:00" duration-ms="7449">
       <class name="ebanking.testcases.TC_LoginTest_1100">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@408d971b]" started-at="2024-01-21T15:26:43 GMT+01:00" name="setup" finished-at="2024-01-21T15:26:53 GMT+01:00" duration-ms="9294" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@40a4337a]" started-at="2024-01-21T19:07:49 GMT+01:00" name="setup" finished-at="2024-01-21T19:07:54 GMT+01:00" duration-ms="4747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@408d971b]" started-at="2024-01-21T15:26:53 GMT+01:00" name="LoginTest" finished-at="2024-01-21T15:26:54 GMT+01:00" duration-ms="1501" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@40a4337a]" started-at="2024-01-21T19:07:54 GMT+01:00" name="LoginTest" finished-at="2024-01-21T19:07:56 GMT+01:00" duration-ms="2338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@408d971b]" started-at="2024-01-21T15:26:54 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:26:54 GMT+01:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@40a4337a]" started-at="2024-01-21T19:07:56 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:07:56 GMT+01:00" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=TC_LoginTest_1100.LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@408d971b] output={null}]]]>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=TC_LoginTest_1100.LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@40a4337a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@408d971b]" started-at="2024-01-21T15:26:54 GMT+01:00" name="teardown" finished-at="2024-01-21T15:26:55 GMT+01:00" duration-ms="334" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@40a4337a]" started-at="2024-01-21T19:07:56 GMT+01:00" name="teardown" finished-at="2024-01-21T19:07:56 GMT+01:00" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ebanking.testcases.TC_LoginTest_1100 -->
-    </test> <!-- BankingApp Test  -->
-  </suite> <!-- eBankingV1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

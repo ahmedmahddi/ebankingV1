@@ -1,8 +1,8 @@
 package ebanking.testcases;
-
 import java.time.Duration;
 import java.util.UUID;
-
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,10 +16,13 @@ import ebanking.utilities.ScreenshotUtils;
 
 public class TC_AddNewCustomer_1103 extends Baseclass {
 
+    // Create a logger instance
+    private static final Logger logger = Logger.getLogger(TC_AddNewCustomer_1103.class.getName());
+
     @Test
     public void addNewCustomer() throws InterruptedException {
         // Print the username being used for login
-        System.out.println("Logging in as user: " + un);
+        logger.log(Level.INFO, "Logging in as user: " + un);
 
         // Initializing Loginpage and logging in
         Loginpage lp = new Loginpage(driver);
@@ -43,7 +46,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
 
         // Setting customer details
         ac.setname(customerName);
-        System.out.println("New customer with this username: " + customerName);
+        logger.log(Level.INFO, "New customer with this username: " + customerName);
         ac.setgender("male");
         ac.setdob("31", "10", "1969");
         ac.setaddress("Route mahdia km 10 ");
@@ -52,7 +55,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
         ac.setpin(241227);
         ac.setmobile("27172110");
         ac.setmail(customerEmail);
-        System.out.println("New customer with this email: " + customerEmail);
+        logger.log(Level.INFO, "New customer with this email: " + customerEmail);
 
         ac.setpassword("Heckyeah12");
         Thread.sleep(3000);
@@ -67,11 +70,12 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
 
         try {
             Assert.assertEquals(actualMsg, expectedMsg);
-            System.out.println("Customer Registered Successfully!!!");
+            logger.log(Level.INFO, "Customer Registered Successfully!!!");
         } catch (Exception e) {
-            System.out.println("Failed to register customer. Verify the entered inputs.");
+            logger.log(Level.SEVERE, "Failed to register customer. Verify the entered inputs.", e);
         }
     }
+
     @AfterMethod
     public void tearDown(ITestResult result) {
         // Check if the test failed, and capture a screenshot if it did

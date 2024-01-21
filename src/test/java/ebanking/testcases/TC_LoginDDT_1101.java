@@ -1,5 +1,7 @@
 package ebanking.testcases;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
@@ -12,57 +14,61 @@ import ebanking.utilities.ScreenshotUtils;
 import ebanking.utilities.XLUtils;
 
 public class TC_LoginDDT_1101 extends Baseclass {
+    // Create a logger instance
+    private static final Logger logger = Logger.getLogger(TC_LoginDDT_1101.class.getName());
 
     // Test method to perform data-driven testing for login
     @Test(dataProvider = "LoginData")
     public void LoginDDT(String username, String password) throws InterruptedException {
         // Create an instance of the Loginpage
         Loginpage lp = new Loginpage(driver);
-        
+
         // Check if username and password are not null
         if (username != null && password != null) {
             // Set the username and password
             lp.setusername(username);
             lp.setpassword(password);
-            
+
+            // Log the username and password being used for login
+            logger.log(Level.INFO, "Attempting login with username: " + username + " and password: " + password);
+
             // Click the submit button
             lp.clickSubmit();
             Thread.sleep(3000);
 
             // Check if the login error alert is present
-            if (isAlertPresent("Check your username and password.")) {
+            if (isAlertPresent("User or Password is not valid")) {
                 // Handle the case where the login error alert is present
-                System.out.println("Login error alert detected.");
-                // You can add further verification or logging here as needed
+                logger.log(Level.INFO, "Login error alert detected.");
+                
             } else {
-                // Your existing logic for handling the absence of an alert
                 Assert.assertTrue(true);
-
                 // Proceed with logout only if login is successful
                 try {
                     // Click the logout button
                     lp.clicklogout();
                     Thread.sleep(3000);
-                    
+
                     // Check if the logout success alert is present
-                    if (isAlertPresent("You have successfully logged out!")) {
+                    if (isAlertPresent("You Have Succesfully Logged Out!!")) {
                         // Handle the case where the logout success alert is present
-                        System.out.println("Logout success alert detected.");
+                        logger.log(Level.INFO, "Logout success alert detected.");
                     }
                 } catch (Exception e) {
                     // Handle exception (e.g., if logout button is not present, or any other issue)
-                    System.out.println("Logout process skipped.");
+                    logger.log(Level.INFO, "Logout process skipped.", e);
                 }
             }
         } else {
             // Log that the test is skipped as username or password is null
-            System.out.println("Skipping test as username or password is null.");
+            logger.log(Level.INFO, "Skipping test as username or password is null.");
         }
     }
 
     // AfterMethod annotation to capture a screenshot if the test fails
     @AfterMethod
     public void tearDown(ITestResult result) {
+        // Check if the test failed, and capture a screenshot if it did
         if (result.getStatus() == ITestResult.FAILURE) {
             ScreenshotUtils.captureScreenshot(driver, result);
         }
@@ -76,12 +82,12 @@ public class TC_LoginDDT_1101 extends Baseclass {
 
             // Check if the alert message contains the expected message
             if (actualMessage.contains(expectedMessage)) {
-                System.out.println("Alert with message '" + expectedMessage + "' detected. Test passed!");
+                logger.log(Level.INFO, "Alert with message '" + expectedMessage + "' detected.");
                 alert.accept();
                 return true;
             } else {
                 // Log unexpected alert message
-                System.out.println("Unexpected alert message: " + actualMessage);
+                logger.log(Level.INFO, "alert message: " + actualMessage);
                 alert.dismiss();
                 return false;
             }
@@ -119,8 +125,7 @@ public class TC_LoginDDT_1101 extends Baseclass {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("Unable to read data from Excel file. Check the file path and format.");
+            logger.log(Level.SEVERE, "Unable to read data from Excel file. Check the file path and format.", e);
         }
 
         return loginData;
