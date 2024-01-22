@@ -19,7 +19,7 @@ public class TC_AddNewCustomer_1103 extends Baseclass {
     // Create a logger instance
     private static final Logger logger = Logger.getLogger(TC_AddNewCustomer_1103.class.getName());
 
-    @Test
+    @Test(groups = "addcustomer")
     public void addNewCustomer() throws InterruptedException {
         // Print the username being used for login
         logger.log(Level.INFO, "Logging in as user: " + un);

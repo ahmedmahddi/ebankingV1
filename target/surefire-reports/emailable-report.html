@@ -9,123 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">eBankingV1</th></tr>
-<tr><td><a href="#t0">BankingApp Test </a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">74.585</td><td></td><td></td></tr>
+<tr><td><a href="#t0">BankingApp Test </a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">63.719</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">eBankingV1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BankingApp Test  &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">ebanking.testcases.TC_AddNewCustomer_1103</td><td><a href="#m0">setup</a></td><td rowspan="1">1705847691495</td><td rowspan="1">184</td></tr><tr><th colspan="4">BankingApp Test  &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">ebanking.testcases.TC_AddNewCustomer_1103</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1705847691684</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">teardown</a></td><td rowspan="1">1705847691685</td><td rowspan="1">0</td></tr><tr><th colspan="4">BankingApp Test  &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">ebanking.testcases.TC_AddNewCustomer_1103</td><td><a href="#m3">addNewCustomer</a></td><td rowspan="1">1705847691684</td><td rowspan="1">0</td></tr><tr><th colspan="4">BankingApp Test  &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">ebanking.testcases.TC_LoginDDT_1101</td><td><a href="#m4">LoginDDT</a></td><td rowspan="5">1705847660636</td><td rowspan="5">15430</td></tr><tr class="passedeven"><td><a href="#m5">LoginDDT</a></td></tr><tr class="passedeven"><td><a href="#m6">LoginDDT</a></td></tr><tr class="passedeven"><td><a href="#m7">LoginDDT</a></td></tr><tr class="passedeven"><td><a href="#m8">LoginDDT</a></td></tr><tr class="passedodd"><td rowspan="1">ebanking.testcases.TC_LoginTest_1100</td><td><a href="#m9">LoginTest</a></td><td rowspan="1">1705847624425</td><td rowspan="1">1905</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">eBankingV1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BankingApp Test  &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ebanking.testcases.TC_AddNewCustomer_1103</td><td><a href="#m0">addNewCustomer</a></td><td rowspan="1">1705861613175</td><td rowspan="1">10207</td></tr><tr class="passedodd"><td rowspan="5">ebanking.testcases.TC_LoginDDT_1101</td><td><a href="#m1">LoginDDT</a></td><td rowspan="5">1705861603816</td><td rowspan="5">2</td></tr><tr class="passedodd"><td><a href="#m2">LoginDDT</a></td></tr><tr class="passedodd"><td><a href="#m3">LoginDDT</a></td></tr><tr class="passedodd"><td><a href="#m4">LoginDDT</a></td></tr><tr class="passedodd"><td><a href="#m5">LoginDDT</a></td></tr><tr class="passedeven"><td rowspan="1">ebanking.testcases.TC_LoginTest_1100</td><td><a href="#m6">LoginTest</a></td><td rowspan="1">1705861567138</td><td rowspan="1">4178</td></tr></tbody>
 </table>
-<h2>BankingApp Test </h2><h3 id="m0">ebanking.testcases.TC_AddNewCustomer_1103#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;LAPTOP-IVL2HKTT&apos;, ip: &apos;192.168.37.80&apos;
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [Q3IyNAMAAAAdBQAAEqwECqYCMII...]}}]}]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:73)
-	at ebanking.testcases.Baseclass.setup(Baseclass.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.UncheckedIOException: java.io.IOException: Could not find user
-	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:80)
-	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:127)
-	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:111)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	... 25 more
-Caused by: java.io.IOException: Could not find user
-	at com.google.common.io.TempFileCreator$JavaNioCreator.lambda$userPermissions$4(TempFileCreator.java:178)
-	at com.google.common.io.TempFileCreator$JavaNioCreator.createTempFile(TempFileCreator.java:120)
-	at com.google.common.io.FileBackedOutputStream.update(FileBackedOutputStream.java:238)
-	at com.google.common.io.FileBackedOutputStream.write(FileBackedOutputStream.java:217)
-	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:309)
-	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:381)
-	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:357)
-	at java.base/sun.nio.cs.StreamEncoder.lockedWrite(StreamEncoder.java:158)
-	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:139)
-	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:219)
-	at com.google.common.io.CharStreams.copyReaderToWriter(CharStreams.java:150)
-	at com.google.common.io.CharStreams.copy(CharStreams.java:79)
-	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:78)
-	... 32 more
-Caused by: java.nio.file.attribute.UserPrincipalNotFoundException
-	at java.base/sun.nio.fs.WindowsUserPrincipals.lookup(WindowsUserPrincipals.java:148)
-	at java.base/sun.nio.fs.WindowsFileSystem$LookupService$1.lookupPrincipalByName(WindowsFileSystem.java:246)
-	at com.google.common.io.TempFileCreator$JavaNioCreator.userPermissions(TempFileCreator.java:153)
-	at com.google.common.io.TempFileCreator$JavaNioCreator.&lt;clinit&gt;(TempFileCreator.java:138)
-	at com.google.common.io.TempFileCreator.pickSecureCreator(TempFileCreator.java:65)
-	at com.google.common.io.TempFileCreator.&lt;clinit&gt;(TempFileCreator.java:51)
-	... 43 more
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ebanking.testcases.TC_AddNewCustomer_1103#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ebanking.testcases.TC_AddNewCustomer_1103#teardown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ebanking.testcases.TC_AddNewCustomer_1103#addNewCustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: &apos;LAPTOP-IVL2HKTT&apos;, ip: &apos;192.168.37.80&apos;
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [Q3IyNAMAAAAdBQAAEqwECqYCMII...]}}]}]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:168)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:73)
-	at ebanking.testcases.Baseclass.setup(Baseclass.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.UncheckedIOException: java.io.IOException: Could not find user
-	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:80)
-	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:127)
-	at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:111)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	... 25 more
-Caused by: java.io.IOException: Could not find user
-	at com.google.common.io.TempFileCreator$JavaNioCreator.lambda$userPermissions$4(TempFileCreator.java:178)
-	at com.google.common.io.TempFileCreator$JavaNioCreator.createTempFile(TempFileCreator.java:120)
-	at com.google.common.io.FileBackedOutputStream.update(FileBackedOutputStream.java:238)
-	at com.google.common.io.FileBackedOutputStream.write(FileBackedOutputStream.java:217)
-	at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:309)
-	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:381)
-	at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:357)
-	at java.base/sun.nio.cs.StreamEncoder.lockedWrite(StreamEncoder.java:158)
-	at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:139)
-	at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:219)
-	at com.google.common.io.CharStreams.copyReaderToWriter(CharStreams.java:150)
-	at com.google.common.io.CharStreams.copy(CharStreams.java:79)
-	at org.openqa.selenium.remote.NewSessionPayload.&lt;init&gt;(NewSessionPayload.java:78)
-	... 32 more
-Caused by: java.nio.file.attribute.UserPrincipalNotFoundException
-	at java.base/sun.nio.fs.WindowsUserPrincipals.lookup(WindowsUserPrincipals.java:148)
-	at java.base/sun.nio.fs.WindowsFileSystem$LookupService$1.lookupPrincipalByName(WindowsFileSystem.java:246)
-	at com.google.common.io.TempFileCreator$JavaNioCreator.userPermissions(TempFileCreator.java:153)
-	at com.google.common.io.TempFileCreator$JavaNioCreator.&lt;clinit&gt;(TempFileCreator.java:138)
-	at com.google.common.io.TempFileCreator.pickSecureCreator(TempFileCreator.java:65)
-	at com.google.common.io.TempFileCreator.&lt;clinit&gt;(TempFileCreator.java:51)
-	... 43 more
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr645323</td><td>YzYterE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr642323</td><td>YyYterE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr549285</td><td>yjUjYha</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr545323</td><td>YyYterE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">ebanking.testcases.TC_LoginTest_1100#LoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>BankingApp Test </h2><h3 id="m0">ebanking.testcases.TC_AddNewCustomer_1103#addNewCustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr642323</td><td>YyYterE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr545323</td><td>YyYterE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr549285</td><td>yjUjYha</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ebanking.testcases.TC_LoginDDT_1101#LoginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr645323</td><td>YzYterE</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ebanking.testcases.TC_LoginTest_1100#LoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,191 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="0" skipped="1">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-21T15:33:37 GMT+01:00" name="eBankingV1" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="74585">
+  <suite started-at="2024-01-21T19:25:59 GMT+01:00" name="eBankingV1" finished-at="2024-01-21T19:27:03 GMT+01:00" duration-ms="63719">
     <groups>
     </groups>
-    <test started-at="2024-01-21T15:33:37 GMT+01:00" name="BankingApp Test " finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="74585">
+    <test started-at="2024-01-21T19:25:59 GMT+01:00" name="BankingApp Test " finished-at="2024-01-21T19:27:03 GMT+01:00" duration-ms="63719">
       <class name="ebanking.testcases.TC_AddNewCustomer_1103">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59309333]" started-at="2024-01-21T15:34:51 GMT+01:00" name="setup" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="184" status="FAIL">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-IVL2HKTT', ip: '192.168.37.80'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [Q3IyNAMAAAAdBQAAEqwECqYCMII...]}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-IVL2HKTT', ip: '192.168.37.80'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [Q3IyNAMAAAAdBQAAEqwECqYCMII...]}}]}]
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at ebanking.testcases.Baseclass.setup(Baseclass.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.UncheckedIOException: java.io.IOException: Could not find user
-at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:80)
-at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:127)
-at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:111)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-... 25 more
-Caused by: java.io.IOException: Could not find user
-at com.google.common.io.TempFileCreator$JavaNioCreator.lambda$userPermissions$4(TempFileCreator.java:178)
-at com.google.common.io.TempFileCreator$JavaNioCreator.createTempFile(TempFileCreator.java:120)
-at com.google.common.io.FileBackedOutputStream.update(FileBackedOutputStream.java:238)
-at com.google.common.io.FileBackedOutputStream.write(FileBackedOutputStream.java:217)
-at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:309)
-at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:381)
-at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:357)
-at java.base/sun.nio.cs.StreamEncoder.lockedWrite(StreamEncoder.java:158)
-at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:139)
-at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:219)
-at com.google.common.io.CharStreams.copyReaderToWriter(CharStreams.java:150)
-at com.google.common.io.CharStreams.copy(CharStreams.java:79)
-at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:78)
-... 32 more
-Caused by: java.nio.file.attribute.UserPrincipalNotFoundException
-at java.base/sun.nio.fs.WindowsUserPrincipals.lookup(WindowsUserPrincipals.java:148)
-at java.base/sun.nio.fs.WindowsFileSystem$LookupService$1.lookupPrincipalByName(WindowsFileSystem.java:246)
-at com.google.common.io.TempFileCreator$JavaNioCreator.userPermissions(TempFileCreator.java:153)
-at com.google.common.io.TempFileCreator$JavaNioCreator.<clinit>(TempFileCreator.java:138)
-at com.google.common.io.TempFileCreator.pickSecureCreator(TempFileCreator.java:65)
-at com.google.common.io.TempFileCreator.<clinit>(TempFileCreator.java:51)
-... 43 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@7b9a4292]" started-at="2024-01-21T19:26:44 GMT+01:00" name="setup" finished-at="2024-01-21T19:26:53 GMT+01:00" duration-ms="9034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59309333]" started-at="2024-01-21T15:34:51 GMT+01:00" name="addNewCustomer" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-IVL2HKTT', ip: '192.168.37.80'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [Q3IyNAMAAAAdBQAAEqwECqYCMII...]}}]}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'LAPTOP-IVL2HKTT', ip: '192.168.37.80'
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: [Q3IyNAMAAAAdBQAAEqwECqYCMII...]}}]}]
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:625)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:89)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:73)
-at ebanking.testcases.Baseclass.setup(Baseclass.java:38)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.io.UncheckedIOException: java.io.IOException: Could not find user
-at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:80)
-at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:127)
-at org.openqa.selenium.remote.NewSessionPayload.create(NewSessionPayload.java:111)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-... 25 more
-Caused by: java.io.IOException: Could not find user
-at com.google.common.io.TempFileCreator$JavaNioCreator.lambda$userPermissions$4(TempFileCreator.java:178)
-at com.google.common.io.TempFileCreator$JavaNioCreator.createTempFile(TempFileCreator.java:120)
-at com.google.common.io.FileBackedOutputStream.update(FileBackedOutputStream.java:238)
-at com.google.common.io.FileBackedOutputStream.write(FileBackedOutputStream.java:217)
-at java.base/sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:309)
-at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:381)
-at java.base/sun.nio.cs.StreamEncoder.implWrite(StreamEncoder.java:357)
-at java.base/sun.nio.cs.StreamEncoder.lockedWrite(StreamEncoder.java:158)
-at java.base/sun.nio.cs.StreamEncoder.write(StreamEncoder.java:139)
-at java.base/java.io.OutputStreamWriter.write(OutputStreamWriter.java:219)
-at com.google.common.io.CharStreams.copyReaderToWriter(CharStreams.java:150)
-at com.google.common.io.CharStreams.copy(CharStreams.java:79)
-at org.openqa.selenium.remote.NewSessionPayload.<init>(NewSessionPayload.java:78)
-... 32 more
-Caused by: java.nio.file.attribute.UserPrincipalNotFoundException
-at java.base/sun.nio.fs.WindowsUserPrincipals.lookup(WindowsUserPrincipals.java:148)
-at java.base/sun.nio.fs.WindowsFileSystem$LookupService$1.lookupPrincipalByName(WindowsFileSystem.java:246)
-at com.google.common.io.TempFileCreator$JavaNioCreator.userPermissions(TempFileCreator.java:153)
-at com.google.common.io.TempFileCreator$JavaNioCreator.<clinit>(TempFileCreator.java:138)
-at com.google.common.io.TempFileCreator.pickSecureCreator(TempFileCreator.java:65)
-at com.google.common.io.TempFileCreator.<clinit>(TempFileCreator.java:51)
-... 43 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+        <test-method signature="addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@7b9a4292]" started-at="2024-01-21T19:26:53 GMT+01:00" name="addNewCustomer" finished-at="2024-01-21T19:27:03 GMT+01:00" duration-ms="10207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewCustomer -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59309333]" started-at="2024-01-21T15:34:51 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@7b9a4292]" started-at="2024-01-21T19:27:03 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:27:03 GMT+01:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addNewCustomer status=SUCCESS method=TC_AddNewCustomer_1103.addNewCustomer()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@7b9a4292] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@59309333]" started-at="2024-01-21T15:34:51 GMT+01:00" name="teardown" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_AddNewCustomer_1103@7b9a4292]" started-at="2024-01-21T19:27:03 GMT+01:00" name="teardown" finished-at="2024-01-21T19:27:03 GMT+01:00" duration-ms="317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ebanking.testcases.TC_AddNewCustomer_1103 -->
       <class name="ebanking.testcases.TC_LoginDDT_1101">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:33:46 GMT+01:00" name="setup" finished-at="2024-01-21T15:33:54 GMT+01:00" duration-ms="7860" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:11 GMT+01:00" name="setup" finished-at="2024-01-21T19:26:19 GMT+01:00" duration-ms="8181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:33:55 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:34:03 GMT+01:00" duration-ms="8431" status="PASS">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:20 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T19:26:29 GMT+01:00" duration-ms="8498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -201,18 +52,18 @@ at com.google.common.io.TempFileCreator.<clinit>(TempFileCreator.java:51)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:03 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:34:03 GMT+01:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:29 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:26:29 GMT+01:00" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca] output={null}]]]>
+                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:03 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:34:20 GMT+01:00" duration-ms="16667" status="PASS">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:29 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T19:26:34 GMT+01:00" duration-ms="5100" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,18 +79,7 @@ at com.google.common.io.TempFileCreator.<clinit>(TempFileCreator.java:51)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:20 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:34:20 GMT+01:00" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:20 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:34:36 GMT+01:00" duration-ms="15430" status="PASS">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:34 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T19:26:38 GMT+01:00" duration-ms="4106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -255,18 +95,29 @@ at com.google.common.io.TempFileCreator.<clinit>(TempFileCreator.java:51)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:36 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:34:36 GMT+01:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:34 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:26:34 GMT+01:00" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca] output={null}]]]>
+                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:36 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="15108" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:38 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:26:38 GMT+01:00" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:38 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T19:26:43 GMT+01:00" duration-ms="5131" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -282,18 +133,18 @@ at com.google.common.io.TempFileCreator.<clinit>(TempFileCreator.java:51)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:51 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:43 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:26:43 GMT+01:00" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca] output={null}]]]>
+                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:51 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="1" status="PASS">
+        <test-method signature="LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:43 GMT+01:00" name="LoginDDT" data-provider="LoginData" finished-at="2024-01-21T19:26:43 GMT+01:00" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -305,43 +156,43 @@ at com.google.common.io.TempFileCreator.<clinit>(TempFileCreator.java:51)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDDT -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:51 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@1aa7ecca]" started-at="2024-01-21T15:34:51 GMT+01:00" name="teardown" finished-at="2024-01-21T15:34:51 GMT+01:00" duration-ms="313" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:43 GMT+01:00" name="teardown" finished-at="2024-01-21T19:26:44 GMT+01:00" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->
-      <class name="ebanking.testcases.TC_LoginTest_1100">
-        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@79924b]" started-at="2024-01-21T15:33:37 GMT+01:00" name="setup" finished-at="2024-01-21T15:33:44 GMT+01:00" duration-ms="7302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@79924b]" started-at="2024-01-21T15:33:44 GMT+01:00" name="LoginTest" finished-at="2024-01-21T15:33:46 GMT+01:00" duration-ms="1905" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@79924b]" started-at="2024-01-21T15:33:46 GMT+01:00" name="tearDown" finished-at="2024-01-21T15:33:46 GMT+01:00" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b]" started-at="2024-01-21T19:26:43 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:26:43 GMT+01:00" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=TC_LoginTest_1100.LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@79924b] output={null}]]]>
+                <![CDATA[[TestResult name=LoginDDT status=SUCCESS method=TC_LoginDDT_1101.LoginDDT(java.lang.String,java.lang.String)[pri:0, instance:ebanking.testcases.TC_LoginDDT_1101@79924b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@79924b]" started-at="2024-01-21T15:33:46 GMT+01:00" name="teardown" finished-at="2024-01-21T15:33:46 GMT+01:00" duration-ms="559" status="PASS">
+      </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->
+      <class name="ebanking.testcases.TC_LoginTest_1100">
+        <test-method is-config="true" signature="setup()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@359f7cdf]" started-at="2024-01-21T19:26:00 GMT+01:00" name="setup" finished-at="2024-01-21T19:26:07 GMT+01:00" duration-ms="7119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@359f7cdf]" started-at="2024-01-21T19:26:07 GMT+01:00" name="LoginTest" finished-at="2024-01-21T19:26:11 GMT+01:00" duration-ms="4178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@359f7cdf]" started-at="2024-01-21T19:26:11 GMT+01:00" name="tearDown" finished-at="2024-01-21T19:26:11 GMT+01:00" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTest status=SUCCESS method=TC_LoginTest_1100.LoginTest()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@359f7cdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ebanking.testcases.TC_LoginTest_1100@359f7cdf]" started-at="2024-01-21T19:26:11 GMT+01:00" name="teardown" finished-at="2024-01-21T19:26:11 GMT+01:00" duration-ms="326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
