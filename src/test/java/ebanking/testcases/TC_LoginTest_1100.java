@@ -17,7 +17,7 @@ public class TC_LoginTest_1100 extends Baseclass {
     private static final Logger logger = Logger.getLogger(TC_LoginTest_1100.class.getName());
     
     // Test method to perform login and verify the title
-    @Test(groups = "login")
+    @Test
     public void LoginTest() {
         try {
             // Navigating to the specified URL

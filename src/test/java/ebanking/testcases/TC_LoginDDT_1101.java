@@ -18,7 +18,7 @@ public class TC_LoginDDT_1101 extends Baseclass {
     private static final Logger logger = Logger.getLogger(TC_LoginDDT_1101.class.getName());
 
     // Test method to perform data-driven testing for login
-    @Test(dataProvider = "LoginData",groups = "loginDDT")
+    @Test(dataProvider = "LoginData")
     public void LoginDDT(String username, String password) throws InterruptedException {
         // Create an instance of the Loginpage
         Loginpage lp = new Loginpage(driver);

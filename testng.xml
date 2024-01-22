@@ -2,13 +2,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="eBankingV1" parallel="tests" thread-count="3">
   <test name="BankingApp Test ">
-	<groups>
-		    <run>
-                <include name="login"/>
-                <include name="loginDDT"/>
-                <include name="addcustomer"/>
-            </run>
-	</groups>
     <classes>
 	<class name="ebanking.testcases.TC_LoginTest_1100"/> 
       <class name="ebanking.testcases.TC_LoginDDT_1101"/>

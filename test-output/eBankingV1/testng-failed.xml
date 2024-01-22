@@ -2,23 +2,29 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [eBankingV1]" guice-stage="DEVELOPMENT">
   <test thread-count="3" parallel="tests" name="BankingApp Test (failed)">
+    <groups>
+      <run>
+        <include name="login"/>
+        <include name="loginDDT"/>
+        <include name="addcustomer"/>
+      </run>
+    </groups>
     <classes>
       <class name="ebanking.testcases.TC_AddNewCustomer_1103">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="teardown"/>
           <include name="addNewCustomer"/>
         </methods>
       </class> <!-- ebanking.testcases.TC_AddNewCustomer_1103 -->
       <class name="ebanking.testcases.TC_LoginDDT_1101">
         <methods>
-          <include name="setup"/>
-          <include name="LoginDDT" invocation-numbers="1 2 3 4"/>
-          <include name="tearDown"/>
-          <include name="teardown"/>
+          <include name="LoginDDT" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- ebanking.testcases.TC_LoginDDT_1101 -->
+      <class name="ebanking.testcases.TC_LoginTest_1100">
+        <methods>
+          <include name="LoginTest"/>
+        </methods>
+      </class> <!-- ebanking.testcases.TC_LoginTest_1100 -->
     </classes>
   </test> <!-- BankingApp Test (failed) -->
 </suite> <!-- Failed suite [eBankingV1] -->
